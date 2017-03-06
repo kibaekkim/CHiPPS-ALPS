@@ -47,6 +47,7 @@ static inline double AlpsWallClock()
 {
 
 #ifndef COIN_HAS_MPI
+    return CoinGetTimeOfDay();
     double cpu_temp;
 #if defined(_MSC_VER) || defined(__MSVCRT__)
     unsigned int ticksnow;        /* clock_t is same as int */

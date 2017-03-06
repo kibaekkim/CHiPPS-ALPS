@@ -210,7 +210,7 @@ void AlpsParams::setDefaultEntries() {
 
   // IntPar
   setEntry(bufSpare, 256);
-  setEntry(clockType, AlpsClockTypeCpu);
+  setEntry(clockType, AlpsClockTypeWallClock);
   setEntry(eliteSize, 1);
   setEntry(hubInitNodeNum, ALPS_NONE);
   setEntry(hubMsgLevel, 0);
